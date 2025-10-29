@@ -9,7 +9,7 @@ Thời hạn nộp: 31/10/2025
 File được kiểm tra: bai_tap.pdf (PDF gốc chưa ký).  
 Kết quả Terminal hiển thị:  
   - endesive: could not interpret result tuple  
-  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)  
+  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)
 Nhận xét:
 File PDF này chưa có chữ ký nên không tồn tại các trường /ByteRange hay /Contents.
 Chương trình xác thực (verify_pdf.py) hoạt động đúng khi phát hiện và thông báo rằng “file không có chữ ký”.
@@ -18,9 +18,9 @@ Chương trình xác thực (verify_pdf.py) hoạt động đúng khi phát hi�
 Ảnh 2 – Giai đoạn ký file (ky_bai_tap.py)  
 Script ky_bai_tap.py được chạy để ký file.  
 Kết quả Terminal hiển thị:  
-  -50 trang PDF gốc 6  
-  -Ký thành công! File: bai_tap_da_ky.pdf  
-  -PDF hợp lệ (6 trang)  
+  - 50 trang PDF gốc 6  
+  - Ký thành công! File: bai_tap_da_ky.pdf  
+  - PDF hợp lệ (6 trang)  
 Nhận xét:  
 Quá trình ký diễn ra thành công, chương trình tạo file bai_tap_da_ky.pdf.  
 Chữ ký hiển thị ở góc phải dưới, được thêm bằng ảnh ky.png và thời gian thực tế hệ thống.  
@@ -31,14 +31,14 @@ Kết quả này tương ứng với file signed.pdf trong phần demo.
 Ảnh 3 – Giai đoạn xác thực chữ ký (verify_pdf.py với bai_tap_da_ky.pdf`)  
 File được xác thực: bai_tap_da_ky.pdf.  
 Terminal hiển thị log chi tiết:  
-  -certvalidator missing or failed...  
-  -Found 1 self-signed root candidate(s)  
-  -Phát hiện incremental updates hoặc dữ liệu đính kèm sau signature.  
-  -TÓM TẮT XÁC THỰC —  
-  -chữ ký: ✓ (signature_valid)  
-  -messageDigest: ✓  
-  -Timestamp: Không có (RFC3161)  
-  -KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
+  - certvalidator missing or failed...  
+  - Found 1 self-signed root candidate(s)  
+  - Phát hiện incremental updates hoặc dữ liệu đính kèm sau signature.  
+  - TÓM TẮT XÁC THỰC —  
+  - chữ ký: ✓ (signature_valid)  
+  - messageDigest: ✓  
+  - Timestamp: Không có (RFC3161)  
+  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
 Nhận xét:  
 Chữ ký trong file hợp lệ, nội dung hash và messageDigest trùng khớp, chứng chỉ tự ký (self-signed) khớp với file cert.pfx.  
 Tuy không có timestamp RFC3161, nhưng kết quả xác minh chữ ký hoàn toàn chính xác.  
@@ -47,13 +47,13 @@ Phát hiện “incremental update” là bình thường vì PDF được lưu 
 
 Ảnh 4 – Nội dung file nhat_ky_xac_thuc.txt sau xác minh  
 File log ghi đầy đủ chi tiết xác thực:  
--ByteRange: (0, 396017, 397929, 882)  
--Computed SHA-256...  
--messageDigest: KHỚP  
--Public key size: RSA 2048 bits  
--Chuỗi chứng chỉ tin cậy
--Timestamp token: không tìm thấy  
--KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
+  - ByteRange: (0, 396017, 397929, 882)  
+  - Computed SHA-256...  
+  - messageDigest: KHỚP  
+  - Public key size: RSA 2048 bits  
+  - Chuỗi chứng chỉ tin cậy
+  - Timestamp token: không tìm thấy  
+  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
 Nhận xét:  
 Kết quả xác thực được lưu rõ ràng:  
 Thuật toán ký: SHA-256 + RSA 2048 bit  
