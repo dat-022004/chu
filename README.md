@@ -9,7 +9,7 @@ Thời hạn nộp: 31/10/2025
 File được kiểm tra: bai_tap.pdf (PDF gốc chưa ký).  
 Kết quả Terminal hiển thị:  
   - endesive: could not interpret result tuple  
-  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)
+  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)  
 Nhận xét:
 File PDF này chưa có chữ ký nên không tồn tại các trường /ByteRange hay /Contents.
 Chương trình xác thực (verify_pdf.py) hoạt động đúng khi phát hiện và thông báo rằng “file không có chữ ký”.
