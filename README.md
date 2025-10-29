@@ -9,7 +9,8 @@ Thời hạn nộp: 31/10/2025
 File được kiểm tra: bai_tap.pdf (PDF gốc chưa ký).  
 Kết quả Terminal hiển thị:  
   - endesive: could not interpret result tuple  
-  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)  
+  - Không tìm thấy /ByteRange trong PDF (không có chữ ký hoặc format khác)
+
 Nhận xét:
 File PDF này chưa có chữ ký nên không tồn tại các trường /ByteRange hay /Contents.
 Chương trình xác thực (verify_pdf.py) hoạt động đúng khi phát hiện và thông báo rằng “file không có chữ ký”.
@@ -20,7 +21,8 @@ Script ky_bai_tap.py được chạy để ký file.
 Kết quả Terminal hiển thị:  
   - 50 trang PDF gốc 6  
   - Ký thành công! File: bai_tap_da_ky.pdf  
-  - PDF hợp lệ (6 trang)  
+  - PDF hợp lệ (6 trang)
+
 Nhận xét:  
 Quá trình ký diễn ra thành công, chương trình tạo file bai_tap_da_ky.pdf.  
 Chữ ký hiển thị ở góc phải dưới, được thêm bằng ảnh ky.png và thời gian thực tế hệ thống.  
@@ -38,7 +40,8 @@ Terminal hiển thị log chi tiết:
   - chữ ký: ✓ (signature_valid)  
   - messageDigest: ✓  
   - Timestamp: Không có (RFC3161)  
-  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
+  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ
+
 Nhận xét:  
 Chữ ký trong file hợp lệ, nội dung hash và messageDigest trùng khớp, chứng chỉ tự ký (self-signed) khớp với file cert.pfx.  
 Tuy không có timestamp RFC3161, nhưng kết quả xác minh chữ ký hoàn toàn chính xác.  
@@ -53,7 +56,8 @@ File log ghi đầy đủ chi tiết xác thực:
   - Public key size: RSA 2048 bits  
   - Chuỗi chứng chỉ tin cậy
   - Timestamp token: không tìm thấy  
-  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ  
+  - KẾT LUẬN TỔNG QUÁT: HỢP LỆ
+
 Nhận xét:  
 Kết quả xác thực được lưu rõ ràng:  
 Thuật toán ký: SHA-256 + RSA 2048 bit  
