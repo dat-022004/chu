@@ -20,7 +20,6 @@ Thời hạn nộp: 31/10/2025
 📝 Nhận xét: Chữ ký hợp lệ, nội dung không bị chỉnh sửa, chứng chỉ tin cậy, có timestamp. Hệ thống xác thực hoạt động đúng.  
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ffcf495e-1874-4391-bb78-935c64b2176f" />  
 
-
 Ảnh 4 – Nội dung file nhat_ky_xac_thuc.txt sau xác minh  
 👉 Ghi log chi tiết quá trình xác thực, từng bước đều “HỢP LỆ”.  
 📝 Nhận xét: Nhật ký rõ ràng, minh chứng được việc kiểm tra toàn diện (PKCS7, hash, signature, chain, OCSP, timestamp).  
